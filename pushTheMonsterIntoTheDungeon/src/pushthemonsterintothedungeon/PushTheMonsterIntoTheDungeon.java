@@ -13,8 +13,16 @@ public class PushTheMonsterIntoTheDungeon {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) throws Exception {
+        Monster m1 = new Monster("ciccio", 10, 5);
+        Monster m2 = new Monster("franco", 20, 2);
+        
+        m1.subisci(m2.attacca());
+        m2.subisci(m1.attacca());
+        m1.subisci(m2.attacca());
+        m2.subisci(m1.attacca());
+        m1.subisci(m2.attacca());
+        m2.subisci(m1.attacca());
     }
     
 }
